@@ -1,11 +1,11 @@
 # Seguimiento de Casos COVID
 
 ## Descripción
-Este proyecto es una aplicación web desarrollada con CodeIgniter y Oracle para el seguimiento de casos de COVID-19. Permite registrar, actualizar y monitorear casos de contagio, contactos cercanos y estados de salud de los pacientes, facilitando la toma de decisiones en entornos sanitarios y administrativos.
+Este proyecto es una aplicación web desarrollada con CodeIgniter y MySQL para el seguimiento de casos de COVID-19. Permite registrar, actualizar y monitorear casos de contagio, contactos cercanos y estados de salud de los pacientes, facilitando la toma de decisiones en entornos sanitarios y administrativos.
 
 ## Tecnologías Utilizadas
 - **Backend:** CodeIgniter 3/4
-- **Base de Datos:** Oracle Database
+- **Base de Datos:** MySQL Database
 - **Frontend:** HTML, CSS, JavaScript, Bootstrap
 - **Servidor Web:** Apache/Nginx
 - **ORM:** Query Builder de CodeIgniter
@@ -21,20 +21,20 @@ Este proyecto es una aplicación web desarrollada con CodeIgniter y Oracle para 
 ### Requisitos Previos
 1. Tener instalado un servidor web (Apache o Nginx).
 2. Instalar PHP (>=7.3 para CodeIgniter 4).
-3. Tener configurada una base de datos Oracle.
+3. Tener configurada una base de datos MySQL.
 4. Composer para gestionar dependencias.
 
 ### Pasos de Instalación
 1. Clonar el repositorio:
    ```bash
-   git clone https://github.com/usuario/proyecto-covid.git
+   git clone https://github.com/jeanca9711/gircovid.git
    cd proyecto-covid
    ```
 2. Instalar dependencias con Composer:
    ```bash
    composer install
    ```
-3. Configurar el archivo `.env` o `database.php` con las credenciales de Oracle.
+3. Configurar el archivo `application/config/database.php` con las credenciales de Oracle.
 4. Ejecutar migraciones de base de datos:
    ```bash
    php spark migrate
@@ -47,12 +47,6 @@ Este proyecto es una aplicación web desarrollada con CodeIgniter y Oracle para 
 - Actualizar estados de salud y contactos cercanos.
 - Generar reportes y analizar tendencias.
 
-## Contribución
-Si deseas contribuir a este proyecto, por favor abre un **issue** o envía un **pull request** en el repositorio.
-
-## Licencia
-Este proyecto está bajo la licencia MIT. Para más información, revisa el archivo `LICENSE`.
-
 ## Contacto
-Para consultas o soporte, contáctanos a [correo@ejemplo.com](mailto:correo@ejemplo.com).
+Para consultas o soporte, contáctanos a [jeancarlosdpa01@gmail.com](mailto:jeancarlosdpa01@gmail.com).
 
