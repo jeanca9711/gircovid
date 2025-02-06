@@ -1,70 +1,58 @@
-###################
-What is CodeIgniter
-###################
+# Seguimiento de Casos COVID
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+## Descripción
+Este proyecto es una aplicación web desarrollada con CodeIgniter y Oracle para el seguimiento de casos de COVID-19. Permite registrar, actualizar y monitorear casos de contagio, contactos cercanos y estados de salud de los pacientes, facilitando la toma de decisiones en entornos sanitarios y administrativos.
 
-*******************
-Release Information
-*******************
+## Tecnologías Utilizadas
+- **Backend:** CodeIgniter 3/4
+- **Base de Datos:** Oracle Database
+- **Frontend:** HTML, CSS, JavaScript, Bootstrap
+- **Servidor Web:** Apache/Nginx
+- **ORM:** Query Builder de CodeIgniter
 
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
+## Características Principales
+- Registro de pacientes infectados y sospechosos.
+- Seguimiento del estado de salud de los pacientes.
+- Relación de contactos cercanos para trazabilidad.
+- Reportes y estadísticas sobre la evolución de los casos.
+- Acceso seguro mediante autenticación de usuarios.
 
-**************************
-Changelog and New Features
-**************************
+## Instalación
+### Requisitos Previos
+1. Tener instalado un servidor web (Apache o Nginx).
+2. Instalar PHP (>=7.3 para CodeIgniter 4).
+3. Tener configurada una base de datos Oracle.
+4. Composer para gestionar dependencias.
 
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
+### Pasos de Instalación
+1. Clonar el repositorio:
+   ```bash
+   git clone https://github.com/usuario/proyecto-covid.git
+   cd proyecto-covid
+   ```
+2. Instalar dependencias con Composer:
+   ```bash
+   composer install
+   ```
+3. Configurar el archivo `.env` o `database.php` con las credenciales de Oracle.
+4. Ejecutar migraciones de base de datos:
+   ```bash
+   php spark migrate
+   ```
+5. Configurar el servidor web y acceder a la aplicación.
 
-*******************
-Server Requirements
-*******************
+## Uso
+- Iniciar sesión con credenciales de usuario.
+- Registrar nuevos casos COVID con la información del paciente.
+- Actualizar estados de salud y contactos cercanos.
+- Generar reportes y analizar tendencias.
 
-PHP version 5.6 or newer is recommended.
+## Contribución
+Si deseas contribuir a este proyecto, por favor abre un **issue** o envía un **pull request** en el repositorio.
 
-It should work on 5.3.7 as well, but we strongly advise you NOT to run
-such old versions of PHP, because of potential security and performance
-issues, as well as missing features.
+## Licencia
+Este proyecto está bajo la licencia MIT. Para más información, revisa el archivo `LICENSE`.
 
-************
-Installation
-************
+## Contacto
+Para consultas o soporte, contáctanos a [correo@ejemplo.com](mailto:correo@ejemplo.com).
 
-Please see the `installation section <https://codeigniter.com/user_guide/installation/index.html>`_
-of the CodeIgniter User Guide.
-
-*******
-License
-*******
-
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
-
-*********
-Resources
-*********
-
--  `User Guide <https://codeigniter.com/docs>`_
--  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
--  `Community Forums <http://forum.codeigniter.com/>`_
--  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
--  `Community Slack Channel <https://codeigniterchat.slack.com>`_
-
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
-
-***************
-Acknowledgement
-***************
-
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
