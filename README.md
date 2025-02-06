@@ -28,7 +28,7 @@ Este proyecto es una aplicación web desarrollada con CodeIgniter y MySQL para e
 1. Clonar el repositorio:
    ```bash
    git clone https://github.com/jeanca9711/gircovid.git
-   cd proyecto-covid
+   cd gircovid
    ```
 2. Instalar dependencias con Composer:
    ```bash
